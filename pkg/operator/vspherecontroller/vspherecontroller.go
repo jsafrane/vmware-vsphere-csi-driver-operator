@@ -610,7 +610,7 @@ func (c *VSphereController) updateConditions(
 	}
 
 	if conditionChanged && upgradeStatus != operatorapi.ConditionTrue {
-		c.eventRecorder.Warningf(string(lastCheckResult.CheckStatus), blockUpgradeMessage)
+		c.eventRecorder.Warningf(string(lastCheckResult.CheckStatus), "%s", blockUpgradeMessage)
 	}
 
 	updateFuncs = append(updateFuncs, v1helpers.UpdateConditionFn(allowUpgradeCond))

@@ -16,4 +16,5 @@
 
 _output
 vmware-vsphere-csi-driver-operator
+vmware-vsphere-csi-driver-operator-tests-ext
 cns-migration
